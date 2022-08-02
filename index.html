@@ -32,8 +32,8 @@
             </nav>
             
             <ul class="header-info">
-                <li><a href="mailto:info@devstudio.com" class="header-email link">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="header-telephone link">+38 096 111 11 11</a></li>
+                <li class="header-contacts"><a href="mailto:info@devstudio.com" class="header-email link">info@devstudio.com</a></li>
+                <li class="header-contacts"><a href="tel:+380961111111" class="header-telephone link">+38 096 111 11 11</a></li>
             </ul>
             
             
@@ -56,7 +56,7 @@
         </section>
 
 
-        <section class="advantages section">
+        <section class="section">
             <div class="container">
                 <h2 class="visually-hidden">НАШІ ПЕРЕВАГИ</h2>
                 <ul class="advantages-list list ">
@@ -65,17 +65,17 @@
                         <p class="advantages-paragraph">Ідейні міркування,і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
 
-                    <li class="advantage box">
+                    <li class="advantage-box">
                         <h3 class="advantages-item">ПУНКТУАЛЬНІСТЬ</h3>
                         <p class="advantages-paragraph">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
 
-                    <li class="advantage box">
+                    <li class="advantage-box">
                       <h3 class="advantages-item">ПЛАНУВАННЯ</h3>
                       <p class="advantages-paragraph">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
 
-                    <li class="advantage box">
+                    <li class="advantage-box">
                        <h3 class="advantages-item">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                        <p class="advantages-paragraph">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
@@ -100,32 +100,39 @@
             </div>
         </section>
 
-        <section class="team">
+        <section class="team section">
             <div class="container">
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="member-item"><img class="member-photo" src="./images /img.jp4.jpg" width="270" height="260" alt="Product Designer">
-                        <h3 class="team-worker">Ігор Дем'яненко</h3>
-                        <p class="job">Product Designer</p>
+                        <div class="team-members">
+                           <h3 class="team-worker">Ігор Дем'яненко</h3>
+                           <p class="job">Product Designer</p>
+                        </div>
                     </li>
 
                     <li class="member-item">
                         <img class="member-photo" src="./images /img.jpg5.jpg" width="270" height="260" alt="Frontend Developer">
-                        <h3 class="team-worker">Ольга Рєпіна</h3>
-                        <p class="job">Frontend Developer</p>
+                        <div class="team-members">
+                           <h3 class="team-worker">Ольга Рєпіна</h3>
+                           <p class="job">Frontend Developer</p>
+                        </div>
                     </li>
 
                     <li class="member-item">
                         <img class="member-photo" src="./images /img.jpg6.jpg" width="270" height="260" alt="Marketing">
-                        
-                        <h3 class="team-worker">Микола Тарасов</h3>
-                        <p class="job">Marketing</p>
+                        <div class="team-members">
+                           <h3 class="team-worker">Микола Тарасов</h3>
+                           <p class="job">Marketing</p>
+                        </div>
                     </li>
 
                     <li class="member-item">
                         <img class="member-photo" src="./images /img.jpg7.jpg" width="270" height="260" alt="UI Designer">
-                        <h3 class="team-worker">Михайло Єрмаков</h3>
-                        <p class="job">UI Designer</p>
+                        <div class="team-members">
+                           <h3 class="team-worker">Михайло Єрмаков</h3>
+                           <p class="job">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -135,13 +142,12 @@
     <footer class="footer">
         <div class="container">
             <a href="./index.html" class="footer-logo link">Web<span class="header-logo2 link">Studio</span></a>
-            <address class="adress-info">
-                <a href="https://goo.gl/maps/FsZgaGo8YKT9qEPr9" class="address link">
-                   м. Київ, пр-т Лесі Українки, 26
-                </a>
+            <address class="address-info">
                 <ul class="address-list list">
-                    <li><a href="mailto:info@example.com" class="address-email link">info@example.com</a></li>
-                    <li><a href="tel:+380991111111" class="address-telephone link">+38 099 111 11 11</a></li>
+                    <li class="site-address"><a href="https://goo.gl/maps/FsZgaGo8YKT9qEPr9" class="address link">
+                        м. Київ, пр-т Лесі Українки, 26</a></li>
+                    <li class="site-address"><a href="mailto:info@example.com" class="address-email link">info@example.com</a></li>
+                    <li class="site-address"><a href="tel:+380991111111" class="address-telephone link">+38 099 111 11 11</a></li>
                 </ul>
             </address>
         </div>

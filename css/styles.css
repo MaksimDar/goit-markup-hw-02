@@ -25,7 +25,8 @@ h6 {
 
 ul {
     margin: 0;
-    padding-left: 0;
+    padding: 0;
+    list-style: none;
 }
 img {
     display: block;
@@ -52,7 +53,7 @@ img {
 }
 
 .section {
-    padding-top: 0;
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 
@@ -99,8 +100,7 @@ img {
 
 .header {
     background-color:var(--white-color) ;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header .container {
@@ -135,6 +135,8 @@ img {
 }
 
 .header-link {
+    display:block;
+    padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -149,21 +151,20 @@ img {
 
 .header-list {
    display: flex;
-   padding-top: 32px;
-   padding-bottom: 32px;
-   margin-right: 314px;
 }
 
-.header-item:not(first-child) {
- margin-left: 30px;
+.header-item:not(:first-child) {
+ margin-left: 50px;
 }
 
 .header-info {
+    list-style: none;
     display: flex;
-    justify-content: flex-end;
     margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
+}
+
+.header-contacts:not(:first-child) {
+    margin-left: 50px;
 }
 
 .header-email {
@@ -176,7 +177,6 @@ img {
 
 .header-telephone {
     font-weight: 500;
-    margin-left: 50px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -228,17 +228,12 @@ img {
     min-width: 216px;
 }
 
-.advantages {
-    margin-top: 94px;
-    margin-bottom: 65px;
-}
-
 .advantages-list {
    display: flex;
    gap: 30px;
 }
 .advantage-box {
-    flex-basis: calc((100%-90px)/4);
+    flex-basis: calc((100% - 90px)/4);
 }
 
 .advantages-item {
@@ -258,17 +253,17 @@ img {
     color:var(--pre-title);
 }
 
+.activity {
+    padding-top: 0;
+}
+
 .activity-list {
     display: flex;
     gap: 30px;
 }
 
 .activity-item {
-    max-width: 370px;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-basis: calc(100%-60px/3);
+    flex-basis: calc(100% - 60px/3);
 }
 
 .activity-title {
@@ -282,8 +277,7 @@ img {
 }
 
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  background-color: #F5F4FA;;
 }
 
 .team-list {
@@ -293,13 +287,9 @@ img {
 .member-item {
   width: calc((100% - 90px)/4); 
 }
-.member-photo {
-    max-width: 370px;
-    margin-bottom: 30px;
-}
 
 .team-title {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     align-items: center;
     font-weight: 700;
     font-size: 36px;
@@ -307,6 +297,11 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color:var(--main-title-color);
+}
+
+.team-members {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-worker {
@@ -328,6 +323,7 @@ img {
 }
 
 .footer {
+    padding-top: 60px;
     background-color: #2F303A;
     padding-bottom: 60px;
 }
@@ -345,8 +341,6 @@ img {
 }
 
 .header-logo2 {
-    display: inline-block;
-    padding-top: 60px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -355,12 +349,18 @@ img {
     color: rgba(255, 255, 255, 1);
 }
 
+
+
 .address {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color:var(--white-color);
+}
+
+.site-address:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .address-email,
@@ -372,14 +372,10 @@ img {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.poster {
-  margin-top: 68px;
-}
-
 .poster-buttons {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .button:not(last-child) {
@@ -399,7 +395,7 @@ img {
     gap: 30px;
 }
 .portfolio-item {
-    width: calc((100%-60px) / 3);
+    width: calc((100% - 60px) / 3);
     
 }
 
