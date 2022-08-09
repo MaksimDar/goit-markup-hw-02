@@ -80,6 +80,7 @@ img {
     line-height: 1.62;
     letter-spacing: 0.03em;
     color:var(--black-color);
+    border: transparent;
 }
 
 .button:hover,
@@ -165,6 +166,8 @@ img {
 }
 
 .contact {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -191,13 +194,16 @@ img {
 
 .expression {
     display: flex;
+    text-align: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
     url(../img/hero-photo.jpg);
-    
-    max-width: 1600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding-top: 200px;
     padding-bottom: 200px;
-    text-align: center;
+    margin: 0 auto;
+    max-width: 1600px;
 }
 
 .expression-title {
@@ -223,6 +229,7 @@ img {
     background-color: var(--blue-color);
     cursor: pointer;
     min-width: 216px;
+    border: transparent;
 }
 
 .advantages-list {
@@ -241,9 +248,7 @@ img {
     border-radius: 4px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
-    
-    
+    margin-bottom: 30px; 
 }
 
 .advantages-item {
@@ -420,32 +425,33 @@ img {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 
 .clients-item {
-    display: flex;
     width: 170px;
     height: 92px;
+}
+
+.clients-icon {
+    display: flex;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .clients-icon {
    fill: #AFB1B8; 
 }
 
-.clients-item:hover, 
-.clients-item:focus {
-    border-color: var(--blue-color);
-}
-
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon{
    fill: var(--blue-color) ;
+   border-color: var(--blue-color);
 }
 
 
@@ -481,14 +487,12 @@ img {
     
 }
 
-.join-list {
-    margin-top: 20px;
-}
 .join-us {
   display: flex;
   flex-direction: column;
 }
 .join-soc {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -544,8 +548,12 @@ img {
     
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-link {
+    display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
     cursor: pointer;
     box-shadow: 0 4px 4px 0 
     rgba(0, 0, 0, 0.25);
