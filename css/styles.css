@@ -434,7 +434,7 @@ img {
     height: 92px;
 }
 
-.clients-icon {
+.clients-link {
     display: flex;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -448,10 +448,15 @@ img {
    fill: #AFB1B8; 
 }
 
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+}
+
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon{
    fill: var(--blue-color) ;
-   border-color: var(--blue-color);
 }
 
 
