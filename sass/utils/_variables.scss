@@ -1,0 +1,30 @@
+:root {
+    --black-color: #212121;
+    --main-title-color: #212121;
+    --second-title-color: #212121;
+    --white-color: #FFFFFF;
+    --blue-color: #2196F3;
+    --grey-color: #757575;
+    --pre-title: #757575;
+}
+$gap30: 30px;
+
+.logo--color-blue {
+    color: var(--blue-color);
+}
+
+.logo--color-dark {
+    color: var(--black-color);
+}
+
+.soc__link--color-white {
+    background-color: #FFFFFF;
+}
+
+.footer-logo--color-blue {
+    color: var(--blue-color);
+}
+
+.footer-logo--color-white {
+   color: rgba(255, 255, 255, 1);
+}

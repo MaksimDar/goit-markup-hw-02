@@ -1,0 +1,32 @@
+.expression {
+    display: flex;
+    text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+     url(../img/hero-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+.expression__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    @include font(900,44px,1.36,0.06em);
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.expression__button {
+    font-family: 'Roboto';
+    border-radius: 4px;
+    padding: 10px 32px;
+    @include font(700,16px,1.88,0.06em);
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    cursor: pointer;
+    min-width: 216px;
+    border: transparent;
+}

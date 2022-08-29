@@ -1,0 +1,35 @@
+.activities {
+    padding-top: 0;
+}
+
+.activity {
+    display: flex;
+    gap: $gap30;
+}
+
+.activity__item {
+    flex-basis: calc(100% - 60px/3);
+}
+
+.activity__sentence {
+    @include font(700,36px,1.16,0.03em);
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--main-title-color);
+}
+
+.activity__thumb {
+    position: relative;
+}
+
+.activity__title {
+    @include flex;
+    @include font(700,14px,1.14,0.03em);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+}

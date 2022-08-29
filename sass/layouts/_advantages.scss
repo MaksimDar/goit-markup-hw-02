@@ -1,0 +1,29 @@
+.advantages {
+    display: flex;
+    gap: $gap30;
+}
+
+.advantages__box {
+    flex-basis: calc((100% - 90px)/4);
+}
+
+.advantages__container {
+    @include flex;
+    background-color: #F5F4FA;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.advantages__item {
+    @include font(700,14px,1.14,0.03em);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: var(--second-title-color);
+}
+
+.advantages__paragraph {
+    @include font(null,14px,1.71,0.03em);
+    color: var(--pre-title);
+}
