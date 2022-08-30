@@ -1,4 +1,4 @@
-.team {
+.section--other-background {
     background-color: #F5F4FA;
 }
 
@@ -11,7 +11,7 @@
     width: calc((100% - 90px)/4);
 }
 
-.team__title {
+.section__title {
     margin-bottom: 50px;
     align-items: center;
     @include font(700,36px,1.16,0.03em);
@@ -24,20 +24,20 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-.member {
+.team-list__box {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: var(--white-color);
 }
 
-.member__worker {
+.team-list__title {
     @include font(500,16px,1.18,0.03em);
     margin-bottom: 10px;
     text-align: center;
     color: var(--second-title-color);
 }
 
-.member__job {
+.team-list__text {
     @include font(null,16px,1.18,0.03em);
     color: var(--pre-title);
     margin-bottom: 16px;

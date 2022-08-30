@@ -1,32 +1,30 @@
-.clients {
-    background-color: var(--white-color);
-}
 
-.clients__title {
+
+.section__title {
     @include font(700,36px,1.16,0.03em);
     text-align: center;
     color: #212121;
 }
 
-.partners {
+.clients {
     display: flex;
     justify-content: center;
     gap: $gap30;
 }
 
-.clients__partners {
+.section__clients {
     margin-top: 50px;
 }
 
 
-.partners__item {
+.clients__item {
     @include flex;
     width: 170px;
     height: 92px;
 
 }
 
-.partners__link {
+.clients__link {
     @include flex;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -42,6 +40,6 @@
     }
 }
 
-.partners__icon {
+.clients__icon {
     fill: currentColor;
 }

@@ -3,7 +3,7 @@
     gap: $gap30;
 }
 
-.advantages__box {
+.advantages__item {
     flex-basis: calc((100% - 90px)/4);
 }
 
@@ -16,14 +16,14 @@
     margin-bottom: 30px;
 }
 
-.advantages__item {
+.advantages__title {
     @include font(700,14px,1.14,0.03em);
     margin-bottom: 10px;
     text-transform: uppercase;
     color: var(--second-title-color);
 }
 
-.advantages__paragraph {
+.advantages__text {
     @include font(null,14px,1.71,0.03em);
     color: var(--pre-title);
 }

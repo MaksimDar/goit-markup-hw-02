@@ -12,6 +12,7 @@
     padding-bottom: 24px;
     font-family: 'Raleway';
     @include font(700,26px,1.19,0.03em);
+    color: var(--blue-color);
 }
 
 .header__logo {
@@ -34,7 +35,7 @@
     &:focus {
         color: var(--blue-color);
     }
-    &.current::after {
+    &.navigation__link--current::after {
         content: "";
         position: absolute;
         width: 100%;
@@ -49,7 +50,7 @@
 
 
 
-.current {
+.navigation__link--current {
     color: var(--blue-color);
 }
 
@@ -70,11 +71,11 @@
     margin-left: auto;
 }
 
-.information__contacts:not(:first-child) {
+.information__item:not(:first-child) {
     margin-left: 50px;
 }
 
-.information__contact {
+.information__link {
     display: flex;
     align-items: center;
     @include font(500,14px,1.14,0.02em);

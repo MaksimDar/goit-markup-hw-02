@@ -1,4 +1,4 @@
-.activities {
+.section--no-padding-top {
     padding-top: 0;
 }
 
@@ -11,7 +11,7 @@
     flex-basis: calc(100% - 60px/3);
 }
 
-.activity__sentence {
+.section__title {
     @include font(700,36px,1.16,0.03em);
     margin-bottom: 50px;
     text-align: center;
