@@ -4,19 +4,31 @@
 
 .team-list {
     display: flex;
+    flex-wrap: wrap;
     gap: $gap30;
 }
 
 .team-list__item {
-    width: calc((100% - 90px)/4);
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px)/2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px)/4);
+        
+    }
 }
 
 .section__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     align-items: center;
     @include font(700,36px,1.16,0.03em);
     text-align: center;
     color: var(--main-title-color);
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 }
 
 .team-list__item {
