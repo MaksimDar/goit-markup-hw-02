@@ -6,7 +6,20 @@
 
 .footer__container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+    @media screen and (min-width: 768px) {
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+        align-items: baseline;
+        flex-wrap: nowrap;
+        justify-content: center;
+        text-align: left;
+    }  
 }
 
 
@@ -28,7 +41,9 @@
 
 .address__location {
     flex-grow: 1;
-    margin-right: 70px;
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+    }
 }
 
 .address__site:not(:last-child) {
@@ -43,7 +58,9 @@
 
 .join {
     @include direction($fd: column);
-    margin-right: 93px;
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }  
 }
 .join__us {
     @include font(700,14px,1.14,0.03em);
@@ -79,23 +96,34 @@
 }
 
 .footer-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
     display: block;
     gap: 12px;
     margin-left: auto;
+    }  
 }
-
-
 
 .footer-form__text {
     @include direction($fd:row);
+    justify-content: center;
     margin-bottom: 20px;
     @include font(700,14px,1.14,0.03em);
     text-transform: uppercase;
     color: #FFFFFF;
+    @media screen and (min-width: 1200px) {
+        justify-content: start;
+    }
 }
 
 .footer-form__email {
-    width: 358px;
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
+    width: 100%;
     height: 50px;
     background-color: rgba(47, 48, 58, 1);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -124,9 +152,13 @@
 
 .footer-form__div {
     @include direction($fd:row);
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    @media screen and (min-width: 1200px) {
     width: 570px;
     gap: 12px;
-
+    }
     &>.footer-button {
         display: flex;
         align-items: center;

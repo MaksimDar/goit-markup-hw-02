@@ -22,8 +22,8 @@
 <body>
     <header class="header">
         <div class="container header__container">
+            <a href="./index.html" class="logo header__logo link">Web<span class="logo--color-dark link">Studio</span></a>
             <nav class="navigation">
-                <a href="./index.html" class="logo header__logo link">Web<span class="logo--color-dark link">Studio</span></a>
             
                 <ul class="navigation__list list">
                    <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--current link">Студія</a></li>
@@ -51,16 +51,68 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="menu__open-btn" data-menu-open>
+                <svg class="menu__icon" width="24" height="16">
+                    <use href="./img/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
             
+        </div>
+        <div class="menu is-hidden" data-menu>
+            <div class="container">
+                <button type="button" class="menu__close-btn" data-menu-close>
+                    <svg class="menu__close" width="18" height="18">
+                        <use href="./img/icons.svg#icon-menu-close"></use>
+                    </svg>
+                </button>
+                <nav class="menu-navigation">
+                    <ul class="menu-navigation__list list">
+                        <li class="menu-navigation__item"><a href="./index.html" class="menu-navigation__link link">Студія</a></li>
+                        <li class="menu-navigation__item"><a href="./portfolio.html" class="menu-navigation__link link">Портфоліо</a>
+                        </li>
+                        <li class="menu-navigation__item"><a href="" class="menu-navigation__link link">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="menu-information menu__menu-information">
+                    <li class="menu-information__item">
+                        <a href="tel:+380961111111" class="menu-information__tel link">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="menu-information__item">
+                        <a href="mailto:info@devstudio.com" class="menu-information__mail link">
+                
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu-soc">
+                    <li class="menu-soc__item">
+                        <a href="" class="menu-soc__link link">Instagram</a>
+                    </li>
+                    <li class="menu-soc__item">
+                        <a href="" class="menu-soc__link link ">Twitter</a>
+                    </li>
+                    <li class="menu-soc__item">
+                        <a href="" class="menu-soc__link link ">Facebook</a>
+                    </li>
+                    <li class="menu-soc__item">
+                        <a href="" class="menu-soc__link link">LinkedIn</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
         </div>
 
     </header>
 
 
     <main>
-        <section class="expression ">
+        <section class="expression">
             <div class="container">
-               <h1 class="expression__title">Ефективні рішення<br> для вашого бізнесу</h1>
+               <h1 class="expression__title">Ефективні рішення для<br> вашого бізнесу</h1>
 
                <button type="button" class="expression__button" data-modal-open>Замовити послугу</button>
             </div>
@@ -152,7 +204,25 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list__item">
-                        <img class="team-list__photo" src="./img/img-4.jpg" width="270" height="260" alt="Product Designer">
+                        <picture>
+                            <source 
+                               srcset="./img/img-4.jpg 1x,
+                               ./img/img-4-2x.jpg 2x" 
+                               media="min-width:1200px"
+                            />
+                            <source 
+                                srcset="./img/img-4-tab.jpg 1x,
+                                ./img/img-4-tab-2x.jpg 2x"
+                                media="min-width:768"
+                            />
+                            <source 
+                                srcset="./img/img-4-mob.jpg 1x,
+                                ./img/img-4-mob-2x.jpg 2x"
+                                media="max-width:767"
+                            />
+                            <img class="team-list__photo" src="./img/img-4-mob.jpg" width="450" height="460" alt="Product Designer">
+                        </picture>
+                        
                         <div class="team-list__box">
                             <h3 class="team-list__title">Ігор Дем'яненко</h3>
                             <p class="team-list__text">Product Designer</p>
@@ -191,7 +261,26 @@
                     </li>
 
                     <li class="team-list__item">
-                        <img class="team-list__photo" src="./img/img-5.jpg" width="270" height="260" alt="Frontend Developer">
+                        <picture>
+                            <source
+                               srcset="./img/img-5.jpg 1x,
+                               ./img/img-5-2x.jpg 2x"
+                               media="min-width:1200px"
+                            />
+                            <source 
+                                srcset="./img/img-5-tab.jpg 1x,
+                                ./img/img-5-tab-2x.jpg 2x" 
+                                media="min-width:768px" 
+                            />
+                            <source 
+                                srcset="./img/img-5-mob.jpg 1x,
+                                ./img/img-5-mob-2x.jpg 2x" 
+                                media="max-width:767px" 
+                            />
+                            <img class="team-list__photo" src="./img/img-5-mob.jpg" width="450" height="460" alt="Frontend Developer">
+                        </picture>
+                        
+                        
                         <div class="team-list__box">
                            <h3 class="team-list__title">Ольга Рєпіна</h3>
                            <p class="team-list__text">Frontend Developer</p>
@@ -229,7 +318,24 @@
                     </li>
 
                     <li class="team-list__item">
-                        <img class="team-list__photo" src="./img/img-6.jpg" width="270" height="260" alt="Marketing">
+                        <picture>
+                            <source
+                              srcset="./img/img-6.jpg 1x,
+                              ./img/img-6-2x.jpg 2x"
+                              media="min-width:1200px"
+                            />
+                            <source 
+                               srcset="./img/img-6-tab.jpg 1x,
+                               ./img/img-6-tab-2x.jpg 2x"
+                               media="min-width:768px"
+                            />
+                            <source
+                               srcset="./img/img-6-mob.jpg 1x,
+                               ./img/img-6-mob-2x.jpg 2x"
+                               media="max-width:767px" 
+                            />
+                            <img class="team-list__photo" src="./img/img-6-mob.jpg" width="450" height="460" alt="Marketing">
+                        </picture>
                         <div class="team-list__box">
                            <h3 class="team-list__title">Микола Тарасов</h3>
                            <p class="team-list__text">Marketing</p>
@@ -267,7 +373,24 @@
                     </li>
 
                     <li class="team-list__item">
-                        <img class="team-list__photo" src="./img/img-7.jpg" width="270" height="260" alt="UI Designer">
+                        <picture>
+                            <source 
+                              srcset="./img/img-7.jpg 1x,
+                              ./img/img-7-2x.jpg 2x"
+                              media="min-width:1200px"
+                            />
+                            <source 
+                              srcset="./img/img-7-tab.jpg 1x,
+                              ./img/img-7-tab-2x.jpg 2x"
+                              media="min-width:768"
+                            />
+                            <source
+                              srcset="./img/img-7-mob.jpg 1x,
+                              ./img/img-7-mob-2x.jpg 2x"
+                              media="max-width:767px"
+                            />
+                            <img class="team-list__photo" src="./img/img-7-mob.jpg" width="450" height="460" alt="UI Designer">
+                        </picture>
                         <div class="team-list__box">
                            <h3 class="team-list__title">Михайло Єрмаков</h3>
                            <p class="team-list__text">UI Designer</p>
@@ -417,7 +540,8 @@
             </div>
           
             <form class="footer-form">
-                <label for="user-email" class="footer-form__text">Підпишіться на розсилку</label>
+                <div class="footer-form__box">
+                    <label for="user-email" class="footer-form__text">Підпишіться на розсилку</label>
                 <div class="footer-form__div">
                     <input type="email" name="user-email" id="user-email" placeholder="E-mail" required class="footer-form__email">
                     <button type="submit" class="footer-button">Підписатися
@@ -426,9 +550,6 @@
                         </svg>
                     </button>
                 </div>
-                
-                   
-        
             </form>
         </div>
     </footer>
@@ -496,6 +617,7 @@
 
     
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 
