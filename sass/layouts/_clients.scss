@@ -1,15 +1,4 @@
 
-.section__title {
-margin-bottom: 30px;
-align-items: center;
-@include font(700, 36px, 1.16, 0.03em);
-text-align: center;
-color: var(--main-title-color);
-@media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
-}
-}
-
 .clients {
     display: flex;
     flex-wrap: wrap;

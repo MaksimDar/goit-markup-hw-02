@@ -17,6 +17,7 @@
 
 .advantages__container {
     @include flex;
+    height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;

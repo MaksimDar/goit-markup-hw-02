@@ -1,6 +1,10 @@
 .header {
     background-color: var(--white-color);
     border-bottom: 1px solid #ECECEC;
+    height: 60px;
+    @media screen and (min-width:768px) {
+        height: 80px;
+    }
     &__container {
         display: flex;
         align-items: center;
@@ -8,8 +12,12 @@
 }
 
 .logo {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @media screen and (min-width:768px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
     font-family: 'Raleway';
     @include font(700,26px,1.19,0.03em);
     color: var(--blue-color);
@@ -92,6 +100,10 @@
 
 .information__item:not(:last-child) {
     margin-bottom: 12px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
+
 }
 
 .information__link {
@@ -154,6 +166,9 @@
 }
 
 .menu__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
     width: 40px;
     height: 40px;
     margin-left: auto;
@@ -180,6 +195,10 @@
 .menu-navigation__link {
     @include font(500,40px,1.17,0.02em);
     color: #212121;
+}
+
+.menu-navigation__link--active {
+ color: #2196F3;
 }
 
 .menu-information {
